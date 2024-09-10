@@ -1,0 +1,415 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    /* overflow: hidden; */
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black; 
+    position: relative;
+}
+
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* background: transparent; */
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2rem;
+}
+.header .logo a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size:2.5rem;
+}
+
+.header .navBar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+
+
+}
+
+
+ul li{
+    padding: 0 1rem;
+    list-style-type: none;
+
+}
+
+li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+
+li a::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 30px;
+   background-color: palevioletred;
+    width: 0px;
+    height: 4px;
+    transition:all 0.3s ease;
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+}
+
+
+li a:hover::after{
+    background-color: palevioletred;
+    width: 45px;
+}
+.logo {
+    width: 200px; /* Adjust logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 1.5rem;
+}
+
+/* ----------------Home Styling--------------- */
+.home{
+    
+    position: relative;
+    margin:4rem 0 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+}
+
+.home .weAre{
+    width: 600px;
+}
+
+.home .weAre h1{
+font-size: 1rem;
+color: white;
+font-weight: 900;
+position: relative;
+font-size: larger
+}
+
+
+.weAre h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -15%;
+    background-color: palevioletred;
+    width: 50px;
+    height: 5px;
+}
+
+.weAre .btn {
+width: 200px;
+height: 50px;
+margin-top: 1.5rem;
+background-color: transparent; 
+border: 3px solid palevioletred;
+color:white;
+font-weight:200 ;
+font-size:1.05rem ;
+cursor: pointer;
+transition:all 0.3s ease;
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+}
+.weAre .btn:hover{
+
+    background-color: palevioletred;
+}
+
+/* --------------------------------Content Styling---------------------------------------- */
+
+.content{
+    margin-top: 4rem;
+}
+
+.content .card-group{
+  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+
+}
+.card-group .card{
+    width: 350px;
+    height: 350px;
+    background-color: gray;
+    padding: 2rem;
+    transition:all 0.3s ease;
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    z-index: 555;
+}
+
+.card i{
+    font-size: 3rem;
+    color: palevioletred;
+    margin-top: 3rem;
+    transition:color 0.3s ease;
+    -webkit-transition:color 0.3s ease;
+    -moz-transition:color 0.3s ease;
+    -ms-transition:color 0.3s ease;
+    -o-transition:color 0.3s ease;
+}
+.card:hover i{
+   color: white;
+}
+.card h2{
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 4rem;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.card h2::after{
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 0;
+    background-color: palevioletred;
+    width: 25px;
+    height: 3px;
+}
+
+.card p{
+    color: white;
+    margin-top: 1rem;
+}
+.card:hover{
+    background-color: palevioletred;
+}
+
+.card-group .rectangle{
+position: absolute;
+width: 250px;
+height: 150px;
+background-color: palevioletred;
+right: 0.0rem;
+top: 14rem;
+
+}
+/* ------------------------------------Main content styling------------------------ */
+.main-content{
+    width: 95%;
+    height: 770px;
+    background-color: dimgray;
+    margin:4rem auto 4rem;
+    padding: 1rem;
+}
+
+.main-content .page{
+    margin: 8rem;
+    margin-left: 4rem;
+}
+
+.main-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    position: relative;
+}
+
+
+.main-content .services::before{
+    content: "";
+     position:absolute;
+     top: -25%;
+     left: 0;
+     width:60px ;
+     height: 4px;
+     background-color: palevioletred;
+}
+
+.main-content .text-p{
+color: palevioletred;
+font-weight: 700;
+font-size: 0.8rem;
+}
+
+.service-plans{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+
+}
+
+.service-plans .plan .btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    padding: 0 2rem;
+    width: 370px;
+    height: 90px; ;
+    text-align: center;
+    background-color: gray;
+    border: none;
+    outline: none; 
+font-size: 1.2rem;
+font-weight: 700;
+color: white;
+cursor: pointer;
+transition:all 0.3s ease;
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+-o-transition:all 0.3s ease; 
+
+}
+
+.plan .btn:hover{
+    background-color: palevioletred;
+}
+
+.plan .btn i{
+    position: absolute;
+    right: 4rem;
+}
+
+/* -------------------------------------------works-content styling-------------------------------------- */
+
+
+.works{
+margin-top: 6rem;
+}
+
+.work-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+
+.work-content .view .btn{
+    width: 200px;
+    height: 40px;
+    margin-top: 4rem;
+    background-color: transparent;
+    border: 3px solid palevioletred;
+    color: white;
+    font-weight: 700;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+.view .btn:hover{
+    background-color: palevioletred;
+
+}
+
+
+.works .works-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 4rem;
+}
+.works-img{
+    cursor: pointer;
+}
+/* -----------------------------------ABOUT CONTENT STYLING---------------------------------- */
+
+.about{
+    margin-top: 25%;
+}
+
+.about .about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.about .about-content .about-p{
+    width: 650px;
+    color: gray;
+}
+
+.about-img{
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    gap: 2.5rem;
+}
+
+
+.about-img .left{
+
+    position: relative;
+
+}
+.about-img .left .left-content{
+    position: absolute;
+    bottom: 6rem;
+    left: 2rem;
+}
+
+.left-content h2{
+    color: gray;
+     font-weight: 700;
+     font-size: 1.8rem;
+
+}
+
+.left-content p {
+    color: gray;
+}
+
+.about-img .right .top
+.about-img .right .bottom{
+position: relative;
+}
+
+.about-img  .right .right-content{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.about-img .right .right-content h2{
+ color: white;
+ font-weight: 700;
+}
+
+.about-img .right .right-content p{
+    color: gray;
+}
+.about-img .right .bottom{
+    margin-top: 3.5rem;
+
+}
