@@ -343,21 +343,106 @@ margin-top: 6rem;
 }
 /* -----------------------------------ABOUT CONTENT STYLING---------------------------------- */
 
-.about{
-    margin-top: 25%;
-}
-
-.about .about-content{
+.about-img {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 4rem;
+    gap: 2.5rem;
+    margin-top: 0;
 }
+
+.about{
+    margin-top: 15%;
+}
+
+
+.about-img .left .left-content{
+    position: absolute;
+    bottom: 6rem;
+    left: 2rem;
+} 
+
+.about-img .left, .about-img .right {
+    flex: 1;
+    position: relative; /* Make the parent relative for absolute positioning of the children */
+}
+
+
+.about-img .left-content, .about-img .right-content {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: white;
+}
+
+.about-img .left img, .about-img .right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.about-img .left-content h2, .about-img .right-content h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+}
+
+.about-img .right {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+/* KEEP CODE */
+.about-img .right .top {
+    position: relative;
+}
+
+/* Keep styling  */
+.about-img .right .right-content p{
+    color: whitesmoke !
+}
+
+.about-img .right .bottom {
+    position: relative;
+    margin-top: 3.5rem;
+} 
+
+/* Keep Code */
+
+.left-content p {
+    color: gray;
+}
+
+.about-img .right .top , 
+.about-img .right .bottom{
+position: relative;
+}
+
+
+.about-img  .right .right-content h2{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+} 
+
+.about-img  .right .bottom{
+    margin: 3.5rem;
+
+}
+
+   
+/* -----------------------------------ABOUT CONTENT STYLING---------------------------------- */
+
+
+/* KEEP STYLING */
 
 .about .about-content .about-p{
     width: 650px;
     color: gray;
 }
+
+
+/* KEEP STYLING */
 
 .about-img{
     margin-top: 15%;
@@ -366,50 +451,27 @@ margin-top: 6rem;
     position: relative;
     gap: 2.5rem;
 }
-
-
-.about-img .left{
-
+/* .about-img .left{
     position: relative;
+} */
 
-}
-.about-img .left .left-content{
+/* DELETE */
+/* .about-img .left .left-content{
     position: absolute;
     bottom: 6rem;
     left: 2rem;
-}
+} */
 
-.left-content h2{
+/* DELETE STYLING */
+/* .left-content h2{
     color: gray;
      font-weight: 700;
      font-size: 1.8rem;
 
-}
+} */
 
-.left-content p {
-    color: gray;
-}
 
-.about-img .right .top
-.about-img .right .bottom{
-position: relative;
-}
+/* 
+DELETE STYLING----------------------------------------------------------------
 
-.about-img  .right .right-content{
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-}
 
-.about-img .right .right-content h2{
- color: white;
- font-weight: 700;
-}
-
-.about-img .right .right-content p{
-    color: gray;
-}
-.about-img .right .bottom{
-    margin-top: 3.5rem;
-
-}
