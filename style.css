@@ -545,10 +545,10 @@ gap: 4rem;
 margin-top: 25%;
 
 }
-.customer-content h1{
+/* .customer-content h1{
     font-size: 1.8rem;
 
-}
+} */
 .customers .customer-content{
     width: 650px; 
 }
@@ -560,7 +560,7 @@ margin-top: 25%;
 .customer-content h2{
 margin-top: 2.2rem; 
 color: white;
-font-weight: 300px;
-font-size: 0.9rem;
+font-weight: 300;
+font-size: 300;
 
 }
