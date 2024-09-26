@@ -562,5 +562,42 @@ margin-top: 2.2rem;
 color: white;
 font-weight: 300;
 font-size: 300;
+}
 
+
+/* ------------------------------------------------Latest  section styling -------------------------------------*/
+.latest{
+    margin-top: 20%;
+
+}
+
+.latest h1,.latest .text-p{
+    text-align: center;
+}
+
+.latest .latest-img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.latest-img .img-box{
+position:relative
+}
+.img-box .img{
+    position: relative;
+    top: -6rem;
+}
+.img h4{
+    color:gray; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to the text */
+
+}
+.img h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white; /* White color for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to the text */
 }
